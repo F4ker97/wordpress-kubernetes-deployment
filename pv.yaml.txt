@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: mysql-pv
+spec:
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: manual       # Coincide con el PVC
+  hostPath:
+    path: /data/mysql           # Ruta en tu nodo de Kubernetes
+    type: DirectoryOrCreate     # Crea el directorio si no existe
