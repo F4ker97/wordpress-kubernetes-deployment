@@ -26,7 +26,7 @@ spec:
         - name: WORDPRESS_DB_HOST
           value: mysql-service
         - name: WORDPRESS_DB_PASSWORD
-          value: fernando
+          value: "fernando"
         ports:
         - containerPort: 80
           name: wordpress
