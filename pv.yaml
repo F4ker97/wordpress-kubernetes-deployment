@@ -7,7 +7,7 @@ spec:
     storage: 5Gi
   accessModes:
     - ReadWriteOnce
-  storageClassName: manual       # Coincide con el PVC
+  storageClassName: manual
   hostPath:
-    path: /data/mysql           # Ruta en tu nodo de Kubernetes
-    type: DirectoryOrCreate     # Crea el directorio si no existe
+    path: /data/mysql
+    type: DirectoryOrCreate
